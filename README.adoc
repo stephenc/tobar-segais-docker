@@ -1,0 +1,3 @@
+= About this repository
+
+This is the Git repository of the official image for https://tobarsegais.org/[tobar segais].

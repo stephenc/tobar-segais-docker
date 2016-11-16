@@ -1,5 +1,5 @@
 NAME = tobarsegais/tobar-segais
-VERSION = 1.0
+VERSION = 1.16
 THIS_DIR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 .PHONE: all build tag_latest
