@@ -14,5 +14,6 @@ RUN set -x \
     && wget -O ROOT.war "$TOBAR_SEGAIS_URL" \
     && mkdir -p /usr/local/tomcat/webapps/ROOT \
     && unzip ROOT.war -d /usr/local/tomcat/webapps/ROOT \
+    && mkdir -p /usr/local/tomcat/webapps/ROOT/WEB-INF/bundles \
     && rm ROOT.war \
     && apk del .fetch-deps

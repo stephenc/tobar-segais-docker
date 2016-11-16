@@ -1,3 +1,15 @@
 = About this repository
 
 This is the Git repository of the official image for https://tobarsegais.org/[tobar segais].
+
+== How to use this image
+
+----
+docker run -p 8080:8080 tobarsegais/tobar-segais
+----
+
+If you want to serve some bundles you can either derive an image and put the bundles you want in `/usr/local/tomcat/webapps/ROOT/WEB-INF/bundles/` or you can mount a volume at `/usr/local/tomcat/webapps/ROOT/WEB-INF/bundles/`
+
+----
+docker run -P -v ~/mybundle.jar:/usr/local/tomcat/webapps/ROOT/WEB-INF/bundles/bundle.jar tobarsegais/tobar-segais
+----
